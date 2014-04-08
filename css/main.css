@@ -84,7 +84,7 @@ a.master-link:hover {
   text-indent: -900px;
   float: left;
   font-size: 1.4em;
-  background-image: url(/../assets/noccon_logo.png);
+  background-image: url(../assets/noccon_logo.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
