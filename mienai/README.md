@@ -1,6 +1,6 @@
 # Die Angst vor der Autonomie der Technik 2
 
-_Dorothee Claasen_
+_Dorothee Clasen_
 
 ![image](assets/img01.jpg)
 
