@@ -1,4 +1,0 @@
-#!/bin/sh
-
-APPDIR=$(dirname "$0")
-java  -Djava.library.path="$APPDIR" -cp "$APPDIR/lib/HandyMIENAI.jar:$APPDIR/lib/core.jar:$APPDIR/lib/javascript.jar:$APPDIR/lib/video.jar:$APPDIR/lib/NyAR4psg.jar:$APPDIR/lib/NyARToolkit.jar:$APPDIR/lib/gluegen-rt.jar:$APPDIR/lib/jogl.jar:$APPDIR/lib/opengl.jar" HandyMIENAI

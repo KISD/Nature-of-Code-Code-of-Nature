@@ -1,4 +1,0 @@
-#!/bin/sh
-
-APPDIR=$(dirname "$0")
-java  -Djava.library.path="$APPDIR:$APPDIR/lib" -cp "$APPDIR/lib/LindenmayerSystem_KISD_WS1314_Moldenhauer.jar:$APPDIR/lib/core.jar:$APPDIR/lib/jogl-all.jar:$APPDIR/lib/gluegen-rt.jar:$APPDIR/lib/jogl-all-natives-linux-i586.jar:$APPDIR/lib/gluegen-rt-natives-linux-i586.jar:$APPDIR/lib/toxiclibscore.jar:$APPDIR/lib/peasycam.jar:$APPDIR/lib/controlP5.jar" LindenmayerSystem_KISD_WS1314_Moldenhauer

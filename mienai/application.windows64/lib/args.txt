@@ -1,3 +1,0 @@
-
-HandyMIENAI
-HandyMIENAI.jar,core.jar,javascript.jar,video.jar,NyAR4psg.jar,NyARToolkit.jar,gluegen-rt.jar,jogl.jar,opengl.jar

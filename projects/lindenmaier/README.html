@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Digitale Simulation - Von der natürlichen Schönheit der Zahlen</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="site">
+          <div class="header">
+            <h1 class="title"><a href="/">Nature of Code - Code of Nature</a></h1>
+            <a class="extra" href="/">home</a>
+          </div>
+
+          <p>Die Schönheit der Pflanzen hat die Aufmerksamkeit von Mathematikern und Wissenschaftlern seit Jahrhunderten sehr stark angezogen. Auffällig geometrische Merkmale wie die bilaterale Symmetrie der Blätter, der Rotationssymmetrie der Blumen und der spiralförmigen Anordnung der Skalen in Tannenzapfen wurden ausgiebig untersucht.</p>
+
+<p>Dies wird gut in einem Zitat des Mathematikers Herrmann Weyl verdeutlicht, </p>
+
+<blockquote>
+<p>„Schönheit wird mit Symmetrie erzeugt.“</p>
+</blockquote>
+
+<p>Gerade in Architektur und im Design finden sich immer wieder die Aufgaben, Strukturen zu schaffen und Symmetrie oder Asymmetrie zu erzeugen. Diese sind in vielen Fällen Kopien aus der Natur, wo diese Strukturen scheinbar selbstverständlich existieren.   </p>
+
+<p>Durch Computer-Code gibt es die Möglichkeit die selbstverständlich, natürlichen Strukturen anhand von abstrahierten Formalismen am Monitor entstehen zu lassen und zu verstehen. Ein interessantes Beispiel in diesem Zusammenhang ist für mich die Darstellung von Simulation organischer Strukturen und biologischer Prozesse.   </p>
+
+<p>Der Blick auf den Code selbst beschert dem informierten Betrachter ein ebenso natürliches Bild, welches den Code als verständliche Abstraktion begreifbar macht. Dem Leihen hingegen bleibt dies verwehrt und er versteht diese Art der Abstraktion erst wenn sie „compiled“, also durch die Maschine für ihn interpretiert wurde. Der Simulation von natürlichen Prozessen und Systemen gelingt es sogar das „Leben“ als solches auf den Monitor zu erschaffen, wie zelluläre Automaten eindrucksvoll zeigen. Die Verbindung von Mathematik und Design findet gerade hier für mich eine sehr interessante Schnittstelle. Fraktale sind beispielsweise Symmetrien, die sich erst durch die Visualisierung von mathematischen Formeln in Code gezeigt haben und so eindeutig eine Symmetrie hinter den Zahlen aufzeigen.  </p>
+
+<p>Der ungarische, theoretische Biologe Aristid Lindenmayer (1925-1985) entwickelte um 1968 ein relativ simples, aber dennoch sehr leistungsfähiges Verfahren, um biologisches Pflanzenwachstum mathematisch zu beschreiben. In einem Lindenmayer-System (kurz: L-System) wird ein mehr oder weniger einfaches Grundmuster (Zeichenketten und Produktionsregeln), durch fortwährende Wiederholung in die zu beschreibende Form überführt. Diese Schritte können rekursiv durchgeführt werden und gehören zu den sogenannten Ersetzungssystemen. Die Rekursion (lateinisch recurrere ‚zurücklaufen‘) ist eine Technik in Mathematik, Logik und Informatik, eine Funktion durch sich selbst zu definieren. Die Rekursion und die Iteration sind im Wesentlichen gleichmächtige Sprachmittel innerhalb von vielen Programmiersprachen.  </p>
+
+<p>Dem polnischen Informatiker Przemysław Prusinkiewicz gelang erstmalig in Zusammenarbeit mit Lindenmayer und mit Hilfe der Programmiersprache Logo Pflanzenwachstum digital zu erzeugen. Da das zeichnende Objekt in diesem Programm eine Schildkröte war, wurde diese Art der Steuerung Turtle-Grafik genannt. Prusinkiewicz gelang es hierdurch, die beiden Welten des Formalismus mit der Computergrafik zu verknüpfen, so dass die, durch das Lindenmayer-System erzeugten, Zeichenketten als Befehlsfolge der Turtle-Grafik interpretiert wurden.  </p>
+
+<p>Die Formenvielfalt dieses Formalismus reicht von einfachen Sträuchern, bis hin zu fotorealistischen Abbildungen kompliziertester pflanzlicher Strukturen. In jüngerer Zeit fanden L-Systeme hierdurch eine weite Anwendung in der Computergrafik, bspw. bei der Erzeugung von Fraktalen. Dies sind grundsätzlich natürliche oder künstliche Gebilde, oder geometrische Muster, die einen hohen Grad von Selbstähnlichkeit aufweisen. Unter Selbstähnlichkeit versteht man hier die Wiederholung einer bestimmten Struktur in sich selbst. Ein klassisches Beispiel für ein solches Gebilde ist die Schneeflocke.</p>
+
+<p>Eine Rekursive Funktion:</p>
+
+<ol>
+<li>Zeichne eine Linie </li>
+<li>Entferne das mittlere Drittel und zeichne diese </li>
+<li>Wiederhole Schritt 2 für die übrigen Linien, immer und immer wieder…</li>
+</ol>
+
+<p>Diese Abfolge von Anweisungen beschreibt mit Worten, die im Jahre 1883 vom deutschen Mathematiker Georg Cantor entwickelten einfachen Regeln um eine unendliche Menge zu generieren.
+Übersetzt in Computer-Code (Processing, Java) liest sich die obere Anweisung wie folgt:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">void cantor(float x, float y, float len) {
+    if (len &gt;= 1) {                     // Wiederhole Schritt 2 für die übrigen Linien, so und so oft   
+    line(x,y,x+len,y);                //  - Zeichne eine Linie
+    y += 20;
+    cantor(x,y,len/3);                //  - Zeichne eine neue Linie vom Anfang bis zum Ende des ersten Drittels    
+    cantor(x+len*2/3,y,len/3);        //  - Zeichne eine neue Linie vom Anfang des zweiten Drittels bis zum Ende
+    }
+}
+</code></pre></div>
+<p><br/></p>
+
+<p><img src="cantorMenge.jpg" alt="image"></p>
+
+<p><br/></p>
+
+<p>Innerhalb solch einfacher Zeichenketten und Produktionsregeln entstehen nach nur wenigen Wiederholungen sehr komplexe Strukturen. Diese sind neben ihrer ästhetischen und natürlich anmutenden Faszination auch interessante Objekte zur Visualisierung von Daten. Wie Chomsky`s Grammatiken die Grundlage für viele gängige Programmiersprachen sind, so ist der Formalismus der L-Systeme die Grundlage worauf Modellierungs- und Simulationssoftware zur Erstellung von Pflanzen grundsätzlich auch heute noch beruht.</p>
+
+<p>Eine Baum-Struktur:</p>
+
+<ol>
+<li>Zeichne eine Linie </li>
+<li>Am Ende der Linie, (a) dreh dich nach Links und zeichne eine kürzere Linie und (b) dreh dich nach rechts und zeichne eine kürzere Linie </li>
+<li>Wiederhole Schritt 2 für die übrigen Linien, immer und immer wieder…
+Eine sehr natürlich anmutende Grafik entsteht ebenfalls bei den weit verbreiteten Baum-Fraktalen. Die obere Abfolge gibt Anweisungen zu deren Erstellung.
+Übersetzt in Computer-Code (Processing, Java) liest sich die obere Anweisung wie folgt:</li>
+</ol>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">void branch(float len) {
+    line(0, 0, 0, -100);            // Zeichne einen Stamm/Ast
+    translate(0, -100);            // Verschiebe das Koordinatensystem
+    pushMatrix();                //
+    rotate(PI/6);                         // Rotiere nach rechts
+    branch();                    // und verzweige wieder
+    popMatrix();                //
+    pushMatrix();                //
+    rotate(-PI/6);                // Rotiere nach Links
+    branch();                    // und verzweige wieder
+    popMatrix();
+}
+</code></pre></div>
+<p><br/></p>
+
+<p><img src="baumStruktur.jpg" alt="image"></p>
+
+<p><br/>
+ Im Wesentlichen bestehen Grammatiken aus Zeichenalphabeten (zur Erzeugung von Zeichenketten) und Ersetzungsregeln (Produktionsregeln). Hierbei unterscheidet man die zwei Arten von terminalen Zeichen, die in den finalen Zeichenketten selbst vorkommen und nichtlineare Zeichen, die nur zur Strukturbeschreibung benutzt werden und im Laufe des Erzeugungsprozesses durch terminale Zeichen ersetzt werden müssen.   </p>
+
+<p>Solche Grammatiken bieten den Nutzern von Simulationsprogrammen die Fähigkeit, Modelle einfach auszudrücken, ohne die Last diese von Grund auf selbst erstellen zu müssen oder auf statische Modelle zurückzugreifen, bei denen lediglich numerische Parameter Werte leicht variiert werden können. Dieser Vorteil ist gerade in der computergestützten biologischen Forschung besonders wichtig, da dies einen bequemen Mechanismus für die Festlegung und Änderung innerhalb von Experimenten mit allen Aspekten der Modelle ermöglicht. </p>
+
+<p>Auch im Bereich der Datenviaualisierung und Erzeugung generativer Gestaltung wird auf Muster, Symmetrien oder Asymmetrien aus der Natur zurückgegriffen. Einige sehr einfache und traditionelle Anwendungen hierzu ist das Liniendiagramm oder das Netzdiagramm zur Veranschaulichung komplexer oder dynamischer Dateninformationen. Ben Fry, einer der Entwickler von Processing selbst beschreibt dies sehr ausführlich in seiner Master-Thesis über „Organic Information Design“. Ein Beispiel ist hier etwa die „Anemone“, eine organisch simulierten Visualisierung der Aktualisierung von Inhalten und dem Verhalten von Usern auf einer bestimmten Webseite. Neue Teile der Struktur werden hinzugefügt während andere langsam ungenutzt verschwinden. Die jeweiligen Systeme besitzen organisch simulierte Eigenschaften, die in einer interaktiven, optisch vereinfachten Umgebung erzeugt werden, um qualitative Informationen aus großen Mengen von quantitativen Daten, die von dynamischen Informationsquellen erzeugt werden darzustellen. Einen der wichtigsten Teile stellt in diesem Zusammenhang der Prozess des rekursiven Wachstums von Organismen wie etwa im L-System dar. Die Veränderung innerhalb des Wachstums wird durch die Veränderung des darunterlegenden Codes (der Struktur der Dateien), abhängig von ihrer Informationsquelle vorgenommen. Die Zeichenketten hinter dem L-System, gespeist mit Daten, visualisieren dann die Informationen unter Berücksichtigung der Produktionsregeln des Systems. Interessant in diesem Zusammenhang ist nicht nur das Wachstum, sondern ebenfalls die Verkümmerung nicht verwendeter, bzw. unrelevanter Daten aus einem Datenpool.</p>
+
+<p>Selbst wenn es sich beim Lindenmayer System um einen recht alten Formalismus handelt (1968), gibt es nach wie vor weite Anwendungsbereiche für dessen Einsatz innerhalb von computergestützter, naturwissenschaftlicher Forschung, Simulation, Modellierung und Erstellung von generativer, dynamischer Gestaltung. </p>
+
+<h3>Quellen:</h3>
+
+<p><a href="http://de.wikipedia.org/wiki/Lindenmayer-System">http://de.wikipedia.org/wiki/Lindenmayer-System </a><br>
+<a href="http://de.wikipedia.org/wiki/Rekursion">http://de.wikipedia.org/wiki/Rekursion</a><br>
+<a href="http://benfry.com/organic/thesis-0522d.pdf">http://benfry.com/organic/thesis-0522d.pdf</a><br>
+<a href="http://benfry.com/anemone/about/">http://benfry.com/anemone/about/</a><br>
+<a href="http://algorithmicbotany.org/papers/abop/abop-ch1.pdf">http://algorithmicbotany.org/papers/abop/abop-ch1.pdf</a><br>
+<a href="https://archive.org/details/Symmetry_482">https://archive.org/details/Symmetry_482</a><br>
+<a href="http://natureofcode.com/book/">http://natureofcode.com/book/</a><br>
+<a href="https://vimeo.com/album/2265325">https://vimeo.com/album/2265325</a></p>
+
+
+          <div class="footer">
+            <div class="contact">
+              <p>
+                Your Name<br />
+                What You Are<br />
+                you@example.com
+              </p>
+            </div>
+            <div class="contact">
+              <p>
+                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
+                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
+              </p>
+            </div>
+          </div>
+        </div>
+
+    </body>
+</html>
