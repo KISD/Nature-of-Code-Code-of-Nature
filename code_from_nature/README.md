@@ -22,7 +22,7 @@ The properties and methods found in nature can be translated into rules, represe
 
 ### Cellular automaton
 
-<a href="" style="float:left; width: 18%; margin-right: 2%; border: 1px solid gray"><img src="assets/theory1CA.jpg"></a> [Cellular Example](http://)
+<a href="https://github.com/KISD/Nature-of-Code-Code-of-Nature/tree/master/code_from_nature/theory1CA" style="float:left; width: 18%; margin-right: 2%; border: 1px solid gray"><img src="assets/theory1CA.jpg"></a> [Cellular Example](https://github.com/KISD/Nature-of-Code-Code-of-Nature/tree/master/code_from_nature/theory1CA)
 
 Cellular automaton is a discreet complex dynamic system. It consists of cells arranged in a spatial grid structure. Each cell is in one of the finite number of states, which determine local rules. The state of a cell depends on its previous state and the previous state of the cells in its immediate, broader or narrower environment neighborhood. New states of the cells are established in discreet time intervals, and thus it comes to the evolution of the system. The system is self-organized and it reproduces itself.
 
@@ -40,8 +40,8 @@ Development has been used in a variety of computational applications. The first 
 
 ### Fractal
 
-<a href="" style="float:left; width: 18%; margin-right: 2%; border: 1px solid gray"><img src="assets/theory2fractal.jpg"></a>
-[Fractal Example](http://)
+<a href="https://github.com/KISD/Nature-of-Code-Code-of-Nature/tree/master/code_from_nature/theory2fractal" style="float:left; width: 18%; margin-right: 2%; border: 1px solid gray"><img src="assets/theory2fractal.jpg"></a>
+[Fractal Example](https://github.com/KISD/Nature-of-Code-Code-of-Nature/tree/master/code_from_nature/theory2fractal)
 
 Fractal is a complex, hierarchically ordered structure which establishes self-similarity through different scales. The notion of self-similarity is understood as the parts reflecting a whole, that being linear and non-linear self-similarity or self-affinity.
 
@@ -57,7 +57,7 @@ A widely used application is the fractal antenna. The fractal antenna instead of
 
 ### Agents and crowd theory
 
-<a href="" style="float:left; width: 18%; margin-right: 2%; border: 1px solid gray"><img src="assets/theory3agents.jpg"></a> [Agents Example](http://)
+<a href="https://github.com/KISD/Nature-of-Code-Code-of-Nature/tree/master/code_from_nature/theory3agents" style="float:left; width: 18%; margin-right: 2%; border: 1px solid gray"><img src="assets/theory3agents.jpg"></a> [Agents Example](https://github.com/KISD/Nature-of-Code-Code-of-Nature/tree/master/code_from_nature/theory3agents)
 
 Аgents and crowd theory was initiated with the development of technology and is based on the principle of the agents capable of independent actions and learning. Examples in the nature can be the colony of ants or flock of birds.
 
@@ -75,7 +75,7 @@ Software agents are software entities that carry out activities to some degree a
 
 ### Ecological systems
 
-<a href="" style="float:left; width: 18%; margin-right: 2%; border: 1px solid gray"><img src="assets/theory4ecosystem.jpg"></a> [Ecological Example](http://)
+<a href="https://github.com/KISD/Nature-of-Code-Code-of-Nature/tree/master/code_from_nature/theory4ecosystem" style="float:left; width: 18%; margin-right: 2%; border: 1px solid gray"><img src="assets/theory4ecosystem.jpg"></a> [Ecological Example](https://github.com/KISD/Nature-of-Code-Code-of-Nature/tree/master/code_from_nature/theory4ecosystem)
 
 Living organisms exist in network of interactions with other organisms. The form of these interactions is very familiar from everyday life; including feeding, cooperation and competition. Similarly, computing and telecommunications technology are typically organized into networks, with different types of interaction between devices; and therefore the easier comparisons drawn between this nature’s system and technology.
 
@@ -90,7 +90,7 @@ We could see the relations that users have with the cloud computing environment 
 
 ### Evolution systems
 
-<a href="" style="float: left; width: 18%; margin-right: 2%; border: 1px solid gray"><img src="assets/theory5evosystem.jpg"></a> [Evolution Example](http://)
+<a href="https://github.com/KISD/Nature-of-Code-Code-of-Nature/tree/master/code_from_nature/theory5evosystem" style="float: left; width: 18%; margin-right: 2%; border: 1px solid gray"><img src="assets/theory5evosystem.jpg"></a> [Evolution Example](https://github.com/KISD/Nature-of-Code-Code-of-Nature/tree/master/code_from_nature/theory5evosystem)
 
 Evolution has been clearly identified as the source of many diverse and creative solutions to problems in nature. However, it can also be useful as a problem solving tool in artificial systems. There is also the possibility in computer software of simulating living systems, and particularly their evolution. Computer scientists and other theoreticians realized that the selection and mutation of mechanisms that appear so effective in biological evolution could be abstracted to be implemented in computational algorithms.
 
@@ -103,8 +103,6 @@ The application domains of evolutionary computation have been, and remain, wide.
 *Structure of an evolutionary algorithm.*
 
 ### Design from nature
-
-[Design from nature example](http://)
 
 Generative design is a process where the output is generated by a predetermined set of rules, codes, algorithms, or patterns. It has been inspired by natural processes, whereby designs are developed as mathematical patterns applied from nature.
 
